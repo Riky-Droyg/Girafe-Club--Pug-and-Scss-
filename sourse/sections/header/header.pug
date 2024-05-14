@@ -1,0 +1,39 @@
+header.header
+   .header__triangle
+
+   nav.header__nav
+      .header__nav-wrapper
+         ul.header__nav-list
+            a(href="#about-us")
+               li.header__nav-item Про нас
+            a(href="#services")
+               li.header__nav-item Напрямки роботи
+            a(href="#courses")
+               li.header__nav-item Навчання
+            a(href="#travel")
+               li.header__nav-item Наші подорожі
+            a(href="#team")
+               li.header__nav-item Наша команда
+            a(href="#reviews")
+               li.header__nav-item Відгуки
+
+         .header__contacts-wrapper
+            a(href="tel:123-456-7890" class="header__contact-link")
+               img.header__contact-icon(src="./image/phone.png" alt="Phone")
+            a(href="https://www.google.com/maps?q=40.712776,-74.005974" class="header__contact-link")
+               img.header__contact-icon(src="./image/location.png" alt="Location")
+            a(href="mailto:example@example.com" class="header__contact-link")
+               img.header__contact-icon(src="./image/email.png" alt="Email")
+
+         .menu-icon(onclick="navMobile.mobileMenuActive()")
+            span
+
+
+
+   article.hero
+      .hero__wrapper-one
+         h1.hero__title Giraffe Club
+         h2.hero__subtitle Офіційний сертифікований центр підготовки до міжнародних екзаменів Cambrige
+         button.hero__button#hero__button(onclick="modalForm.openForm()") Отримати консультацію
+      .hero__wrapper-two
+         img.hero__image--giraffe(src="./image/Girafe.png" alt="Giraffe")

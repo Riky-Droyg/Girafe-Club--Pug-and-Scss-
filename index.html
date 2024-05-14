@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"><link rel="stylesheet" href="/sourse/OwlCarousel2-2.3.4/owl.carousel.min.css">
+<link rel="stylesheet" href="/sourse/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <div class="mobile-menu__icon-close" onclick="navMobile.mobileMenuClouse()"></div>
+      <div class="mobile-menu_logo">Giraffe Club</div>
+      <ul class="mobile-menu__list-mobile"><a href="#about-us">
+          <li class="mobile-menu__item">Про нас</li></a><a href="#services">
+          <li class="mobile-menu__item">Напрямки роботи</li></a><a href="#courses">
+          <li class="mobile-menu__item">Навчання</li></a><a href="#travel">
+          <li class="mobile-menu__item">Наші подорожі</li></a><a href="#team">
+          <li class="mobile-menu__item">Наша команда</li></a><a href="#reviews">
+          <li class="mobile-menu__item">Відгуки</li></a></ul><img class="mobile-menu__image-giraffe" src="./image/Girafe.png" alt="Giraffe">
+    </div>
+    <div class="background-form" id="background-form" onclick="modalForm.closeForm()"></div>
+    <form class="form-block" action="#" id="form-block">
+      <div class="form-block__icon-close" onclick="modalForm.closeForm()"></div>
+      <h3 class="form-block__title" id="form-block__title"></h3>
+      <input class="form-block__input" id="form-block__input-name" type="text" placeholder="Ім’я">
+      <input class="form-block__input" id="form-block__input-tel" type="tel" placeholder="Номер тел.">
+      <button class="form-block__button" id="form-block__button" onclick="modalForm.formcConfirmation.collectsForm(event)">Надіслати</button>
+    </form>
+    <header class="header">
+      <div class="header__triangle"></div>
+      <nav class="header__nav">
+        <div class="header__nav-wrapper">
+          <ul class="header__nav-list"><a href="#about-us">
+              <li class="header__nav-item">Про нас</li></a><a href="#services">
+              <li class="header__nav-item">Напрямки роботи</li></a><a href="#courses">
+              <li class="header__nav-item">Навчання</li></a><a href="#travel">
+              <li class="header__nav-item">Наші подорожі</li></a><a href="#team">
+              <li class="header__nav-item">Наша команда</li></a><a href="#reviews">
+              <li class="header__nav-item">Відгуки</li></a></ul>
+          <div class="header__contacts-wrapper"><a class="header__contact-link" href="tel:123-456-7890"><img class="header__contact-icon" src="./image/phone.png" alt="Phone"></a><a class="header__contact-link" href="https://www.google.com/maps?q=40.712776,-74.005974"><img class="header__contact-icon" src="./image/location.png" alt="Location"></a><a class="header__contact-link" href="mailto:example@example.com"><img class="header__contact-icon" src="./image/email.png" alt="Email"></a></div>
+          <div class="menu-icon" onclick="navMobile.mobileMenuActive()"><span></span></div>
+        </div>
+      </nav>
+      <article class="hero">
+        <div class="hero__wrapper-one">
+          <h1 class="hero__title">Giraffe Club</h1>
+          <h2 class="hero__subtitle">Офіційний сертифікований центр підготовки до міжнародних екзаменів Cambrige</h2>
+          <button class="hero__button" id="hero__button" onclick="modalForm.openForm()">Отримати консультацію</button>
+        </div>
+        <div class="hero__wrapper-two"><img class="hero__image--giraffe" src="./image/Girafe.png" alt="Giraffe"></div>
+      </article>
+    </header>
+    <section class="about-us" id="about-us">
+      <div class="about-us__link">Про нас</div>
+      <h3 class="about-us__title">Мовних шкіл багато - лідер один!</h3>
+      <div class="about-us__facts fact-list">
+        <div class="fact-list__item"><img class="fact-item__icon" src="./image/calendar.png" alt="Calendar">
+          <h4 class="fact-item__text fact-item__text-desctop">6 років успішної роботи</h4>
+          <h4 class="fact-item__text fact-item__text-mobile">6 років <br> успішної роботи</h4>
+        </div>
+        <div class="fact-list__item"><img class="fact-item__icon" src="./image/open-book.png" alt="book">
+          <h4 class="fact-item__text">Сучасні програми й навчальні матеріали</h4>
+        </div>
+        <div class="fact-list__item"><img class="fact-item__icon" src="./image/female.png" alt="female">
+          <h4 class="fact-item__text">Професійні викладачи</h4>
+        </div>
+        <div class="fact-list__item"><img class="fact-item__icon" src="./image/success.png" alt="success">
+          <h4 class="fact-item__text">Переможець «Народний Бренд» (2018, 2019, 2020)</h4>
+        </div>
+        <div class="fact-list__item"><img class="fact-item__icon" src="./image/handshake.png" alt="handshake">
+          <h4 class="fact-item__text">Топ партнер Cambridge Assessment English</h4>
+        </div>
+        <div class="fact-list__item fact-list__item-grid-6"><img class="fact-item__icon" src="./image/graduating-student.png" alt="student">
+          <h4 class="fact-item__text fact-item__text-desctop">Сотні наших випускників з високим рівнем</h4>
+          <h4 class="fact-item__text fact-item__text-mobile">Сотні випускників з високим рівнем</h4>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="services__link">Напрямки роботи</div><img class="service__image-background-one" src="./image/Girafe.png" alt="Girafe"><img class="service__image-background-two" src="./image/Girafe.png" alt="Girafe"><img class="service__image-background-one-mobile" src="./image/giraffe_club_logo_head-min.png" alt="Girafe"><img class="service__image-background-two-mobile" src="./image/giraffe_club_logo_head.png" alt="Girafe">
+      <h3 class="services__title">Що ти можеш у нас знайти?</h3>
+      <div class="services__list">
+        <div class="services__item"><span class="services__item-number">01</span><span class="services__item-text">Англійська для дітей від 1 року</span></div>
+        <div class="services__item"><span class="services__item-number">02</span><span class="services__item-text">Англійська для дорослих</span></div>
+        <div class="services__item"><span class="services__item-number">03</span><span class="services__item-text">Americanschool для школярів (1- 11 клас)</span></div>
+        <div class="services__item"><span class="services__item-number">04</span><span class="services__item-text">Підготовка до ЗНО</span></div>
+        <div class="services__item"><span class="services__item-number">05</span><span class="services__item-text">Підготовка до міжнародних екзаменів YLE, KET, PET, FCE, IELTS</span></div>
+        <div class="services__item"><span class="services__item-number">06</span><span class="services__item-text">Німецька для дорослих та дітей, віком від 3 років</span></div>
+        <div class="services__item"><span class="services__item-number">07</span><span class="services__item-text">Підготовка дітей до школи</span></div>
+        <div class="services__item"><span class="services__item-number">08</span><span class="services__item-text">Літній табір</span></div>
+      </div>
+      <button class="services__button" id="services__button" onclick="modalForm.openForm()">Залишити заявку</button>
+    </section>
+    <section class="courses" id="cources">
+      <div class="courses__link">Навчання</div>
+      <div class="courses__language">
+        <div class="courses__language-content">
+          <h2 class="courses__language-title">Вивчення іноземної мови</h2>
+          <div class="courses__options">
+            <div class="courses__option">
+              <div class="courses__option-number">01</div>
+              <div class="courses__option-text">У групах</div>
+            </div>
+            <div class="courses__option">
+              <div class="courses__option-number">02</div>
+              <div class="courses__option-text">У міні-групах</div>
+            </div>
+            <div class="courses__option">
+              <div class="courses__option-number">03</div>
+              <div class="courses__option-text">Індивідуально</div>
+            </div>
+          </div>
+        </div><img class="courses__language-image" src="./image/students.png" alt="students">
+      </div>
+      <div class="courses__formats">
+        <h2 class="courses__formats-title">Формати курсів:</h2>
+        <div class="courses__formats-wrapper">
+          <div class="courses__format">
+            <div class="courses__format-number">01</div>
+            <div class="courses__format-item">
+              <h4 class="courses__format-heading">Стандартний</h4>
+              <p class="courses__format-description">Заняття 2 рази на тиждень тривалістю від 30 до 60 хв. (в залежності від віку).</p>
+            </div>
+          </div>
+          <div class="courses__format">
+            <div class="courses__format-number">02</div>
+            <div class="courses__format-item">
+              <h4 class="courses__format-heading">Поглиблений</h4>
+              <p class="courses__format-description">Заняття 3 рази на тиждень по 1 год. 20 хв. <br> З Кембриджським іспитом на новий рівень в кінці навчального року.</p>
+            </div>
+          </div>
+          <div class="courses__format">
+            <div class="courses__format-number">03</div>
+            <div class="courses__format-item">
+              <h4 class="courses__format-heading">Онлайн-курси</h4>
+              <p class="courses__format-description">Можна обрати як стандартний, так і поглиблений формат та вивчати онлайн</p>
+            </div>
+          </div>
+        </div>
+      </div><img class="courses__language-image-mobile" src="./image/students.png" alt="students">
+    </section>
+    <section class="travel" id="travel">
+      <div class="travel__link">Наші подорожі</div>
+      <h2 class="travel__title">Ми подорожуємо світом</h2>
+      <div class="travel__content">
+        <p class="travel__description">Лондон, Греція, Болгарія, Польша, різні міста України.</p>
+        <p class="travel__description">Гарною традицією «GiraffeClub» стали освітні подорожі студентів в різні країни. Окрім вивчення англійської й покращення практичних навичок мови у спеціалізованих мовних центрах світу, програми поїздок передбачають щоденні розваги й екскурсії.</p>
+      </div>
+      <div class="travel__images-mobile">
+        <div class="travel__image-mobile-wrapper-one"><img class="travel__image-mobile travel__image-mobile-two" src="./image/photo-5-mobile.png" alt=""><img class="travel__image-mobile travel__image-mobile-one" src="./image/photo-8-mobile.png" alt=""></div><img class="travel__image-mobile travel__image-mobile-six" src="./image/photo-7-mobile.png" alt=""><img class="travel__image-mobile travel__image-mobile-seven" src="./image/photo-2-mobile.png" alt="">
+        <div class="travel__image-mobile-wrapper-two">
+          <div class="travel__image-mobile-wrapper-three"> <img class="travel__image-mobile travel__image-mobile-five" src="./image/photo-6-mobile.png" alt=""><img class="travel__image-mobile travel__image-mobile-three" src="./image/photo-1-mobile.png" alt=""></div>
+          <div class="travel__image-mobile-wrapper-four"> <img class="travel__image-mobile travel__image-mobile-eight" src="./image/photo-4-mobile.png" alt=""><img class="travel__image-mobile travel__image-mobile-four" src="./image/photo-3-mobile.png" alt=""></div>
+        </div>
+      </div>
+      <div class="travel__images">
+        <div class="travel__image-wrapper-one"><img class="travel__image-one" src="./image/photo-8.png" alt=""><img class="travel__image-two" src="./image/photo-5.png" alt=""></div>
+        <div class="travel__image-wrapper-two">
+          <div class="travel__image-wrapper-three"><img class="travel__image-three" src="./image/photo-1.png" alt=""><img class="travel__image-four" src="./image/photo-3.png" alt=""></div>
+          <div class="travel__image-wrapper-four"><img class="travel__image-five" src="./image/photo-6.png" alt="">
+            <div class="travel__image-wrapper-five"><img class="travel__image-six" src="./image/photo-7.png" alt=""><img class="travel__image-seven" src="./image/photo-2.png" alt=""><img class="travel__image-eight" src="./image/photo-4.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <div class="team__link">Наша команда</div>
+      <div class="team-button" id="team-button-left" onclick="teamCaruselButtoms.iventClickLeft()"></div>
+      <div class="team-button" id="team-button-right" onclick="teamCaruselButtoms.iventClickRight()"></div>
+      <h2 class="team__title">Найкраща команда - найкращі результати</h2>
+      <div class="team__members owl-carousel" id="owl-carousel1">
+        <div class="team__member"><img class="team__member-image" src="./image/valeria.png" alt="">
+          <div class="team__member-wrapper">
+            <h2 class="team__member-name">Валерія Звіранська</h2>
+            <div class="team__member-role">Адміністратор</div>
+          </div>
+        </div>
+        <div class="team__member"><img class="team__member-image" src="./image/olga.png" alt="">
+          <div class="team__member-wrapper">
+            <h2 class="team__member-name">Ольга Мануйлова</h2>
+            <div class="team__member-role">Засновниця школи</div>
+          </div>
+        </div>
+        <div class="team__member"><img class="team__member-image" src="./image/natalia.png" alt="">
+          <div class="team__member-wrapper">
+            <h2 class="team__member-name">Наталія Шмалько</h2>
+            <div class="team__member-role">Адміністратор</div>
+          </div>
+        </div>
+        <div class="team__member"><img class="team__member-image" src="./image/natalia.png" alt="">
+          <div class="team__member-wrapper">
+            <h2 class="team__member-name">Наталія Шмалько</h2>
+            <div class="team__member-role">Адміністратор</div>
+          </div>
+        </div>
+        <div class="team__member"><img class="team__member-image" src="./image/natalia.png" alt="">
+          <div class="team__member-wrapper">
+            <h2 class="team__member-name">Наталія Шмалько</h2>
+            <div class="team__member-role">Адміністратор</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="reviews__link">Відгуки</div>
+      <div id="reviews-button-left" onclick="reviewsCaruselButtoms.iventClickLeft()"></div>
+      <div id="reviews-button-right" onclick="reviewsCaruselButtoms.iventClickRight()"></div>
+      <h2 class="reviews__title">Що кажуть про нас</h2>
+      <div class="reviews__content owl-carousel" id="owl-carousel2">
+        <div class="review">
+          <div class="review__author-wrapper"> 
+            <div class="review__author">
+              <h3 class="review__name">Ольга Березовська</h3>
+              <h4 class="review__position">приватний нотаріус м.Кропивницький</h4>
+            </div><img class="review__author-image" src="./image/Girafe.png" alt="">
+          </div>
+          <p class="review__content">
+            Високий рівень викладання – викладачі прекрасні, професіонали своєї справи.
+            Звернулися до Ольги до Жирафа
+            Клаба за рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний
+            дизайн офісу. Враження лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки.
+            Рекомендую.
+          </p>
+        </div>
+        <div class="review">
+          <div class="review__author-wrapper"> 
+            <div class="review__author">
+              <h3 class="review__name">Ольга Березовська</h3>
+              <h4 class="review__position">приватний нотаріус м.Кропивницький</h4>
+            </div><img class="review__author-image" src="./image/Girafe.png" alt="">
+          </div>
+          <p class="review__content">
+            Високий рівень викладання – викладачі прекрасні, професіонали своєї справи.
+            Звернулися до Ольги до Жирафа
+            Клаба за рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний
+            дизайн офісу. Враження лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки.
+            Рекомендую.
+          </p>
+        </div>
+        <div class="review">
+          <div class="review__author-wrapper"> 
+            <div class="review__author">
+              <h3 class="review__name">Ольга Березовська</h3>
+              <h4 class="review__position">приватний нотаріус м.Кропивницький</h4>
+            </div><img class="review__author-image" src="./image/Girafe.png" alt="">
+          </div>
+          <p class="review__content">
+            Високий рівень викладання – викладачі прекрасні, професіонали своєї справи.
+            Звернулися до Ольги до Жирафа
+            Клаба за рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний
+            дизайн офісу. Враження лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки.
+            Рекомендую.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h2 class="footer__title">Giraffe Club</h2>
+      <div class="footer__contact-info">
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">Номер телефону:</div>
+          <div class="footer__contact-value">+38 050 843 91 68</div>
+        </div>
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">Email:</div>
+          <div class="footer__contact-value">info@giraffe.in.ua</div>
+        </div>
+        <div class="footer__contact-item">
+          <div class="footer__contact-label">Адреса:</div>
+          <div class="footer__contact-value">м. Кропивницький, вул. Соборна, 1а</div>
+        </div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social-label">Соціальні мережі:</div>
+        <div class="footer__social-icons"><img class="footer__social-icon" src="./image/facebook.png" alt="facebook"><img class="footer__social-icon" src="./image/Instagram.png" alt="instagram"></div>
+      </div>
+    </footer>
+    <script src="sourse/sections/nav-mobile/nav-mobile.js"></script>
+    <script src="sourse/sections/modal-form/modal-form.js"></script>
+    <script src="sourse/sections/team/team.js"></script>
+    <script src="/sourse/jquery/jquery-3.7.1.js"></script>
+    <script src="/sourse/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

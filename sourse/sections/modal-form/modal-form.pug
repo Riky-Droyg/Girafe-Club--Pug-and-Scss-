@@ -1,0 +1,10 @@
+.background-form#background-form(onclick="modalForm.closeForm()")
+
+form(action="#").form-block#form-block
+   .form-block__icon-close(onclick="modalForm.closeForm()")
+   h3.form-block__title#form-block__title
+   input.form-block__input#form-block__input-name(type='text' placeholder='Ім’я')
+   input.form-block__input#form-block__input-tel(type='tel' placeholder='Номер тел.')
+   button.form-block__button#form-block__button(onclick="modalForm.formcConfirmation.collectsForm(event)") Надіслати
+
+

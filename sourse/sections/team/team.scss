@@ -1,0 +1,234 @@
+.team {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #de732be6;
+   @include padding-px-to-vw(120px, 290px, 120px, 290px);
+   position: relative;
+}
+
+.team__link {
+   font-weight: 700;
+   @include font-size(26px);
+   color: white;
+   position: absolute;
+   @include value-px-to-vw(top, 112px);
+   @include value-px-to-vw(left, 120px);
+   @include letter-spacing-rem(3px);
+}
+
+#team-button-right {
+   position: absolute;
+   background-image: url(../image/button-right-White.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   @include value-px-to-vw(height, 106px);
+   @include value-px-to-vw(width, 106px);
+   @include value-px-to-vw(right, 120px);
+   @include value-px-to-vw(top, 642px);
+}
+
+#team-button-right:hover {
+   background-image: url(../image/button-right-White-Active.png.png);
+}
+
+#team-button-left {
+   position: absolute;
+   background-image: url(../image/button-left-White.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   @include value-px-to-vw(height, 106px);
+   @include value-px-to-vw(width, 106px);
+   @include value-px-to-vw(left, 120px);
+   @include value-px-to-vw(top, 642px);
+}
+
+#team-button-left:hover {
+   background-image: url(../image/button-left-White-Active.png);
+}
+
+.team__title {
+   @include font-size(50px);
+   @include value-px-to-vw(margin-bottom, 70px);
+   @include letter-spacing-rem(5.4px);
+
+}
+
+.team__members {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   overflow: scroll;
+}
+
+.team__members::-webkit-scrollbar {
+   display: none;
+}
+
+.team__member {
+   // @include value-px-to-vw(margin-right, 32px);
+   @include value-px-to-vw(border-radius, 14px);
+   background-color: white;
+   // @include value-px-to-vw(width, 400px);
+   // @include value-px-to-vw(height, 690px);
+
+
+}
+
+.team__member:last-child {
+   @include value-px-to-vw(margin-right, 0px);
+}
+
+.owl-carousel .owl-item img {
+   height: 100%;
+}
+
+.team__member-image {
+   @include size-block-vw(509px, 400px);
+   object-fit: cover;
+
+}
+
+.team__member-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   @include padding-px-to-vw(40px, 45px, 63px, 45px);
+}
+
+.team__member-name {
+   @include font-size(34px);
+   @include value-px-to-vw(margin-bottom, 18px);
+   @include letter-spacing-rem(1px);
+}
+
+.team__member-role {
+   @include font-size(26px);
+}
+
+
+#ppp {
+   border: solid 30px red;
+}
+
+.owl-stage {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.team__member-large {
+   // @include value-px-to-vw(margin-right, 32px);
+   @include value-px-to-vw(border-radius, 14px);
+   background-color: white;
+   @include value-px-to-vw(width, 476px);
+   @include value-px-to-vw(height, 928px);
+}
+
+// .team__member-image-large {
+//    @include size-block-vw(606px, 476px)
+// }
+// .team__member-wrapper-lagre{
+//    @include value-px-to-vw(padding-bottom, 40px);
+// }
+// .team__member-name-large {
+//    @include letter-spacing-rem(3px);
+//    @include value-px-to-vw(margin-bottom, 25px);
+
+// }
+
+// .team__member-role-large {
+//    @include letter-spacing-rem(3px);
+//    @include value-px-to-vw(margin-bottom, 20px);
+// }
+
+// .team__member-wrapper-desription {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    text-align: center;
+
+// }
+
+// .team__member-desription {
+//    @include font-size(26px);
+//    @include letter-spacing-rem(2.1px);
+//    line-height: 120%;
+// }
+// .team__member-desription:first-child {
+//    @include value-px-to-vw(margin-bottom, 14px)
+// }
+
+
+// .centered {
+//    border: 20px solid green;
+// }
+
+
+
+@media screen and (max-width: 768px) {
+   .team {
+      padding: 88px 0px 154px 0px;
+   }
+
+   .team__link {
+      top: 48px;
+      left: 20px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+   }
+
+   #team-button-left {
+      top: auto;
+      bottom: 64px;
+      left: 20px;
+      height: 66px;
+      width: 66px;
+   }
+
+   #team-button-right {
+      top: auto;
+      bottom: 64px;
+      right: 20px;
+      height: 66px;
+      width: 66px;
+   }
+
+   .team__title {
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 3.1px;
+      line-height: 117%;
+      margin-bottom: 22px;
+      padding: 0 5px;
+   }
+
+   .team__members {}
+
+   .team__member {
+      border-radius: 8px;
+   }
+
+   .team__member-image {}
+
+   .team__member-name {
+      font-size: 20px;
+   }
+
+   .team__member-role {
+      font-size: 16px;
+   }
+
+}
+
+@media screen and (min-width: 564px) and (max-width: 768px) {
+   .team {
+      padding: 88px 10px 154px 10px;
+   }
+}

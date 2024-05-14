@@ -1,0 +1,90 @@
+@mixin mobile-value-px-to-vw($property, $value) {
+   #{$property}: ($value / 360px) * 100vw; // Застосовуємо перетворення до вказаного стилю
+}
+
+
+.mobile-menu {
+   // display: flex;
+   display: none;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   position: absolute;
+   z-index: 999;
+   background-color: white;
+   width: 100%;
+   height: 100%;
+   min-width: 360px;
+}
+
+
+.mobile-menu__icon-close {
+   height: 18px;
+   width: 27px;
+   top: clamp(20.8px, 2.0833333333vw, 2.0833333333vw);
+   right: clamp(20.8px, 2.0833333333vw, 2.0833333333vw);
+   position: absolute;
+   cursor: pointer;
+}
+
+.mobile-menu__icon-close::before,
+.mobile-menu__icon-close::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: black;
+   transform-origin: center;
+}
+
+.mobile-menu__icon-close::before {
+   transform: rotate(45deg);
+}
+
+.mobile-menu__icon-close::after {
+   transform: rotate(-45deg);
+}
+
+
+
+.mobile-menu_logo {
+   font-family: 'Bookman';
+   font-weight: 700;
+   font-size: 32.5px;
+   border-bottom: solid #DF803E 1px;
+   margin-bottom: 27px;
+   padding: 16px 20px 18px 20px;
+   width: 100%;
+   letter-spacing: 2.1px;
+}
+
+.mobile-menu__list-mobile {
+   width: 100%;
+}
+
+.mobile-menu__list-mobile a {
+   display: block;
+   color: black;
+   margin-bottom: 35px;
+}
+.mobile-menu__list-mobile a:last-child {
+   margin-bottom: 0px;
+}
+
+.mobile-menu__item {
+   font-size: 20px;
+
+   padding: 0px 29px;
+   letter-spacing: 1.9px;
+}
+
+.mobile-menu__image-giraffe {
+   width: 140px;
+   height: 195px;
+   margin-bottom: 40px;
+   position: absolute;
+   bottom: 0;
+
+}

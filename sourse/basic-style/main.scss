@@ -1,0 +1,11 @@
+html {
+   @include value-px-to-vw(font-size, 14px);
+   // font-size: 14px;
+}
+
+body {
+   font-family: 'Bookman';
+   font-weight: 400;
+   margin:0 auto;
+   min-width: 360px;
+}

@@ -1,0 +1,31 @@
+@mixin font-size($value) {
+   font-size: $value / 14px * 1rem;
+}
+@mixin value-media-320px($property, $value) {
+   #{$property}: ($value / 320px) * 100vw;
+}
+@mixin letter-spacing-rem($value) {
+   letter-spacing: $value / 14px * 1rem;
+}
+
+@mixin value-px-to-vw($property, $value) {
+   #{$property}: ($value / 1920px) * 100vw; // Застосовуємо перетворення до вказаного стилю
+}
+
+@mixin padding-px-to-vw($top, $right, $bottom, $left, $base-width: 1920px) {
+   padding: ($top / $base-width) * 100vw ($right / $base-width) * 100vw ($bottom / $base-width) * 100vw ($left / $base-width) * 100vw;
+}
+
+@mixin margin-px-to-vw($top, $right, $bottom, $left, $base-width: 1920px) {
+   margin: ($top / $base-width) * 100vw ($right / $base-width) * 100vw ($bottom / $base-width) * 100vw ($left / $base-width) * 100vw;
+}
+
+@mixin padding-basic {
+   padding: 0px 14.323vw 0px 14.323vw;
+}
+
+@mixin size-block-vw($height, $width){
+      height: ($height / 1920px) * 100vw;
+      width: ($width / 1920px) * 100vw;
+
+}

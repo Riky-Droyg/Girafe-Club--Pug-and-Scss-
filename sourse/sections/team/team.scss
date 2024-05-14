@@ -20,7 +20,7 @@
 
 #team-button-right {
    position: absolute;
-   background-image: url(../image/button-right-White.png);
+   background-image: url(./image/button-right-White.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -31,12 +31,12 @@
 }
 
 #team-button-right:hover {
-   background-image: url(../image/button-right-White-Active.png.png);
+   background-image: url(./image/button-right-White-Active.png.png);
 }
 
 #team-button-left {
    position: absolute;
-   background-image: url(../image/button-left-White.png);
+   background-image: url(./image/button-left-White.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 #team-button-left:hover {
-   background-image: url(../image/button-left-White-Active.png);
+   background-image: url(./image/button-left-White-Active.png);
 }
 
 .team__title {

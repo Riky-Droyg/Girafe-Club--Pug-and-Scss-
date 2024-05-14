@@ -19,7 +19,7 @@
 #reviews-button-right {
    position: absolute;
 
-   background-image: url(../image/Button-Right-Orange.png);
+   background-image: url(./image/Button-Right-Orange.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -31,13 +31,13 @@
 }
 
 #reviews-button-right:hover {
-   background-image: url(../image/Button-Right-Orange-Active.png);
+   background-image: url(./image/Button-Right-Orange-Active.png);
 }
 
 #reviews-button-left {
    position: absolute;
 
-   background-image: url(../image/Button-Left-Orange.png);
+   background-image: url(./image/Button-Left-Orange.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -50,7 +50,7 @@
 }
 
 #reviews-button-left:hover {
-   background-image: url(../image/Button-Left-Orange-Active.png);
+   background-image: url(./image/Button-Left-Orange-Active.png);
 }
 
 .reviews__title {

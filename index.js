@@ -79,11 +79,9 @@ let reviewsCaruselButtoms = {
    },
    iventClickLeft() {
       this.clickReviewsButtonLeft();
-      console.log("lll")
 
    },
    iventClickRight() {
-      console.log("lll")
       this.clickReviewsButtonRight();
 
    },
